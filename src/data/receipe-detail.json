@@ -1,0 +1,462 @@
+{
+    "vegetarian": true,
+    "vegan": false,
+    "glutenFree": true,
+    "dairyFree": false,
+    "veryHealthy": false,
+    "cheap": false,
+    "veryPopular": false,
+    "sustainable": false,
+    "lowFodmap": false,
+    "weightWatcherSmartPoints": 9,
+    "gaps": "no",
+    "preparationMinutes": -1,
+    "cookingMinutes": -1,
+    "aggregateLikes": 9,
+    "healthScore": 17,
+    "creditsText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+    "license": "CC BY 3.0",
+    "sourceName": "Foodista",
+    "pricePerServing": 195.11,
+    "extendedIngredients": [
+        {
+            "id": 11422,
+            "aisle": "Produce",
+            "image": "pumpkin.png",
+            "consistency": "SOLID",
+            "name": "pumpkin",
+            "nameClean": "sugar pumpkin",
+            "original": "600 g pumpkin, cleaned",
+            "originalName": "pumpkin, cleaned",
+            "amount": 600.0,
+            "unit": "g",
+            "meta": [
+                "cleaned"
+            ],
+            "measures": {
+                "us": {
+                    "amount": 1.323,
+                    "unitShort": "lb",
+                    "unitLong": "pounds"
+                },
+                "metric": {
+                    "amount": 600.0,
+                    "unitShort": "g",
+                    "unitLong": "grams"
+                }
+            }
+        },
+        {
+            "id": 4053,
+            "aisle": "Oil, Vinegar, Salad Dressing",
+            "image": "olive-oil.jpg",
+            "consistency": "SOLID",
+            "name": "olive oil",
+            "nameClean": "olive oil",
+            "original": "2 Tbs olive oil",
+            "originalName": "olive oil",
+            "amount": 2.0,
+            "unit": "Tbs",
+            "meta": [],
+            "measures": {
+                "us": {
+                    "amount": 2.0,
+                    "unitShort": "Tbs",
+                    "unitLong": "Tbs"
+                },
+                "metric": {
+                    "amount": 2.0,
+                    "unitShort": "Tbs",
+                    "unitLong": "Tbs"
+                }
+            }
+        },
+        {
+            "id": 1019,
+            "aisle": "Cheese",
+            "image": "feta.png",
+            "consistency": "SOLID",
+            "name": "feta cheese",
+            "nameClean": "feta cheese",
+            "original": "120 g feta cheese, crumbled",
+            "originalName": "feta cheese, crumbled",
+            "amount": 120.0,
+            "unit": "g",
+            "meta": [
+                "crumbled"
+            ],
+            "measures": {
+                "us": {
+                    "amount": 4.233,
+                    "unitShort": "oz",
+                    "unitLong": "ounces"
+                },
+                "metric": {
+                    "amount": 120.0,
+                    "unitShort": "g",
+                    "unitLong": "grams"
+                }
+            }
+        },
+        {
+            "id": 1026,
+            "aisle": "Cheese",
+            "image": "mozzarella.png",
+            "consistency": "SOLID",
+            "name": "mozzarella",
+            "nameClean": "mozzarella",
+            "original": "120 g mozzarella, torn into small pieces",
+            "originalName": "mozzarella, torn into small pieces",
+            "amount": 120.0,
+            "unit": "g",
+            "meta": [],
+            "measures": {
+                "us": {
+                    "amount": 4.233,
+                    "unitShort": "oz",
+                    "unitLong": "ounces"
+                },
+                "metric": {
+                    "amount": 120.0,
+                    "unitShort": "g",
+                    "unitLong": "grams"
+                }
+            }
+        },
+        {
+            "id": 1123,
+            "aisle": "Milk, Eggs, Other Dairy",
+            "image": "egg.png",
+            "consistency": "SOLID",
+            "name": "eggs",
+            "nameClean": "egg",
+            "original": "2 eggs",
+            "originalName": "eggs",
+            "amount": 2.0,
+            "unit": "",
+            "meta": [],
+            "measures": {
+                "us": {
+                    "amount": 2.0,
+                    "unitShort": "",
+                    "unitLong": ""
+                },
+                "metric": {
+                    "amount": 2.0,
+                    "unitShort": "",
+                    "unitLong": ""
+                }
+            }
+        },
+        {
+            "id": 2027,
+            "aisle": "Produce",
+            "image": "oregano.jpg",
+            "consistency": "SOLID",
+            "name": "oregano",
+            "nameClean": "oregano",
+            "original": "2 tsp dried oregano",
+            "originalName": "dried oregano",
+            "amount": 2.0,
+            "unit": "tsp",
+            "meta": [
+                "dried"
+            ],
+            "measures": {
+                "us": {
+                    "amount": 2.0,
+                    "unitShort": "tsps",
+                    "unitLong": "teaspoons"
+                },
+                "metric": {
+                    "amount": 2.0,
+                    "unitShort": "tsps",
+                    "unitLong": "teaspoons"
+                }
+            }
+        },
+        {
+            "id": 11297,
+            "aisle": "Spices and Seasonings",
+            "image": "parsley.jpg",
+            "consistency": "SOLID",
+            "name": "parsley",
+            "nameClean": "parsley",
+            "original": "4 Tbs parsley, chopped",
+            "originalName": "parsley, chopped",
+            "amount": 4.0,
+            "unit": "Tbs",
+            "meta": [
+                "chopped"
+            ],
+            "measures": {
+                "us": {
+                    "amount": 4.0,
+                    "unitShort": "Tbs",
+                    "unitLong": "Tbs"
+                },
+                "metric": {
+                    "amount": 4.0,
+                    "unitShort": "Tbs",
+                    "unitLong": "Tbs"
+                }
+            }
+        },
+        {
+            "id": 11215,
+            "aisle": "Produce",
+            "image": "garlic.png",
+            "consistency": "SOLID",
+            "name": "garlic",
+            "nameClean": "garlic",
+            "original": "4 cloves garlic, minced",
+            "originalName": "garlic, minced",
+            "amount": 4.0,
+            "unit": "cloves",
+            "meta": [
+                "minced"
+            ],
+            "measures": {
+                "us": {
+                    "amount": 4.0,
+                    "unitShort": "cloves",
+                    "unitLong": "cloves"
+                },
+                "metric": {
+                    "amount": 4.0,
+                    "unitShort": "cloves",
+                    "unitLong": "cloves"
+                }
+            }
+        }
+    ],
+    "id": 656329,
+    "title": "Pizza bites with pumpkin",
+    "readyInMinutes": 45,
+    "servings": 4,
+    "sourceUrl": "https://www.foodista.com/recipe/SHKG55X4/pizza-bites-with-pumpkin",
+    "image": "https://spoonacular.com/recipeImages/656329-556x370.jpg",
+    "imageType": "jpg",
+    "summary": "Pizza bites with pumpkin might be just the hor d'oeuvre you are searching for. Watching your figure? This gluten free, lacto ovo vegetarian, and primal recipe has <b>309 calories</b>, <b>16g of protein</b>, and <b>22g of fat</b> per serving. This recipe serves 4 and costs $1.95 per serving. 9 people were glad they tried this recipe. Head to the store and pick up eggs, olive oil, mozzarella, and a few other things to make it today. From preparation to the plate, this recipe takes about <b>45 minutes</b>. It is an <b>affordable</b> recipe for fans of Mediterranean food. It is brought to you by Foodista. Taking all factors into account, this recipe <b>earns a spoonacular score of 67%</b>, which is solid. <a href=\"https://spoonacular.com/recipes/pizza-bites-89274\">Pizza Bites</a>, <a href=\"https://spoonacular.com/recipes/pizza-bites-568070\">Pizza Bites</a>, and <a href=\"https://spoonacular.com/recipes/pizza-bites-1765979\">Pizza Bites</a> are very similar to this recipe.",
+    "cuisines": [
+        "Mediterranean",
+        "Italian",
+        "European"
+    ],
+    "dishTypes": [
+        "fingerfood",
+        "antipasti",
+        "starter",
+        "snack",
+        "appetizer",
+        "antipasto",
+        "hor d'oeuvre"
+    ],
+    "diets": [
+        "gluten free",
+        "lacto ovo vegetarian",
+        "primal"
+    ],
+    "occasions": [],
+    "winePairing": {
+        "pairedWines": [
+            "sparkling wine",
+            "sparkling rose"
+        ],
+        "pairingText": "Pizza Bites on the menu? Try pairing with Sparkling Wine and Sparkling rosé. If you're serving a selection of appetizers, you can't go wrong with these. Both are very food friendly and complement a variety of flavors. One wine you could try is NV ONEHOPE Brut. It has 4.7 out of 5 stars and a bottle costs about 20 dollars.",
+        "productMatches": [
+            {
+                "id": 428232,
+                "title": "NV ONEHOPE Brut",
+                "description": "ONEHOPE California Brut Champagne Sparkling Wine is light in color and displays aromas of fresh green apple and nectarine with a hint of fresh baked bread. Crisp, intriguing fresh fruit reminiscent of succulent peach, sweet berries and pear linger on the plate, finishing with creamy and refreshing bubbles. This Brut Sparkling Wine can be paired with appetizers, seafood, sushi as well as a wide range of desserts and cheeses.",
+                "price": "$19.989999771118164",
+                "imageUrl": "https://spoonacular.com/productImages/428232-312x231.jpg",
+                "averageRating": 0.9399999976158142,
+                "ratingCount": 35.0,
+                "score": 0.9305660353516633,
+                "link": "https://www.amazon.com/ONEHOPE-California-Brut-Sparkling-750/dp/B00C3164HC?tag=spoonacular-20"
+            }
+        ]
+    },
+    "instructions": "Chop pumpkin using a food processor until rice-like.\nSaut pumpkin in hot olive oil for 3 minutes. Set aside and let cool.\nMix feta and mozzarella; add, one at a time, eggs. Mix and combine.\nAdd pumpkin and spices, mix well until well blended.\nEvenly spoon the mixture into the greased muffin tin molds. Press pizza dough down evenly and firmly (the pressing down firmly is very important to make sure they stick together).\nPlace in the oven and bake for 30 minutes at 200C.\nRemove the pizza bites from the oven and let set until cool (this is also very important  let the pizza bites set in their pan for 5  10 minutes before removing  if you take them out while they are too hot they will break).",
+    "analyzedInstructions": [
+        {
+            "name": "",
+            "steps": [
+                {
+                    "number": 1,
+                    "step": "Chop pumpkin using a food processor until rice-like.",
+                    "ingredients": [
+                        {
+                            "id": 11422,
+                            "name": "pumpkin",
+                            "localizedName": "pumpkin",
+                            "image": "pumpkin.png"
+                        },
+                        {
+                            "id": 20444,
+                            "name": "rice",
+                            "localizedName": "rice",
+                            "image": "uncooked-white-rice.png"
+                        }
+                    ],
+                    "equipment": [
+                        {
+                            "id": 404771,
+                            "name": "food processor",
+                            "localizedName": "food processor",
+                            "image": "food-processor.png"
+                        }
+                    ]
+                },
+                {
+                    "number": 2,
+                    "step": "Saut pumpkin in hot olive oil for 3 minutes. Set aside and let cool.",
+                    "ingredients": [
+                        {
+                            "id": 4053,
+                            "name": "olive oil",
+                            "localizedName": "olive oil",
+                            "image": "olive-oil.jpg"
+                        },
+                        {
+                            "id": 11422,
+                            "name": "pumpkin",
+                            "localizedName": "pumpkin",
+                            "image": "pumpkin.png"
+                        }
+                    ],
+                    "equipment": [],
+                    "length": {
+                        "number": 3,
+                        "unit": "minutes"
+                    }
+                },
+                {
+                    "number": 3,
+                    "step": "Mix feta and mozzarella; add, one at a time, eggs.",
+                    "ingredients": [
+                        {
+                            "id": 1026,
+                            "name": "mozzarella",
+                            "localizedName": "mozzarella",
+                            "image": "mozzarella.png"
+                        },
+                        {
+                            "id": 1123,
+                            "name": "egg",
+                            "localizedName": "egg",
+                            "image": "egg.png"
+                        },
+                        {
+                            "id": 1019,
+                            "name": "feta cheese",
+                            "localizedName": "feta cheese",
+                            "image": "feta.png"
+                        }
+                    ],
+                    "equipment": []
+                },
+                {
+                    "number": 4,
+                    "step": "Mix and combine.",
+                    "ingredients": [],
+                    "equipment": []
+                },
+                {
+                    "number": 5,
+                    "step": "Add pumpkin and spices, mix well until well blended.",
+                    "ingredients": [
+                        {
+                            "id": 11422,
+                            "name": "pumpkin",
+                            "localizedName": "pumpkin",
+                            "image": "pumpkin.png"
+                        },
+                        {
+                            "id": 2035,
+                            "name": "spices",
+                            "localizedName": "spices",
+                            "image": "spices.png"
+                        }
+                    ],
+                    "equipment": []
+                },
+                {
+                    "number": 6,
+                    "step": "Evenly spoon the mixture into the greased muffin tin molds. Press pizza dough down evenly and firmly (the pressing down firmly is very important to make sure they stick together).",
+                    "ingredients": [
+                        {
+                            "id": 93610,
+                            "name": "pizza dough",
+                            "localizedName": "pizza dough",
+                            "image": "pizza-dough.jpg"
+                        }
+                    ],
+                    "equipment": [
+                        {
+                            "id": 404671,
+                            "name": "muffin tray",
+                            "localizedName": "muffin tray",
+                            "image": "muffin-tray.jpg"
+                        }
+                    ]
+                },
+                {
+                    "number": 7,
+                    "step": "Place in the oven and bake for 30 minutes at 200C.",
+                    "ingredients": [],
+                    "equipment": [
+                        {
+                            "id": 404784,
+                            "name": "oven",
+                            "localizedName": "oven",
+                            "image": "oven.jpg",
+                            "temperature": {
+                                "number": 200.0,
+                                "unit": "Celsius"
+                            }
+                        }
+                    ],
+                    "length": {
+                        "number": 30,
+                        "unit": "minutes"
+                    }
+                },
+                {
+                    "number": 8,
+                    "step": "Remove the pizza bites from the oven and let set until cool (this is also very important  let the pizza bites set in their pan for 5  10 minutes before removing  if you take them out while they are too hot they will break).",
+                    "ingredients": [
+                        {
+                            "id": 0,
+                            "name": "pizza rolls",
+                            "localizedName": "pizza rolls",
+                            "image": ""
+                        }
+                    ],
+                    "equipment": [
+                        {
+                            "id": 404784,
+                            "name": "oven",
+                            "localizedName": "oven",
+                            "image": "oven.jpg"
+                        },
+                        {
+                            "id": 404645,
+                            "name": "frying pan",
+                            "localizedName": "frying pan",
+                            "image": "pan.png"
+                        }
+                    ],
+                    "length": {
+                        "number": 10,
+                        "unit": "minutes"
+                    }
+                }
+            ]
+        }
+    ],
+    "originalId": null,
+    "spoonacularScore": 70.39085388183594,
+    "spoonacularSourceUrl": "https://spoonacular.com/pizza-bites-with-pumpkin-656329"
+}
