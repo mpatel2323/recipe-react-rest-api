@@ -1,6 +1,5 @@
 // App.js
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
 
 import SearchBox from './components/SearchBox';
 import RecipeList from './components/RecipeList';
@@ -11,6 +10,9 @@ import HeaderNav from './components/HeaderNav';
 
 import './App.css';
 
+import recipesData from './data/recipes.json';// Import static JSON data for recipe details in case spoonacular api limit reach for the day
+import selectedRecipeDetailsData from './data/receipe-detail.json';// Import static JSON data for recipe details in case spoonacular api limit reach for the day
+
 const SPURL = "https://api.spoonacular.com/recipes/complexSearch";
 const RD_URL = "https://api.spoonacular.com/recipes/716429/information?includeNutrition=false";
 const SPAPI_KEY = 'b52e888f858f4d0e9f89fda48da1dffb';
@@ -20,6 +22,8 @@ function App() {
   const [recipes, setRecipes] = useState([]);
   const [selectedRecipe, setSelectedRecipe] = useState('');
   const [isLoading, setIsLoading] = useState(true);
+  const [useStaticData, setUseStaticData] = useState(true);
+
 
   useEffect(() => {
     if (searchQuery.trim() !== '') {
@@ -32,10 +36,17 @@ function App() {
 
   async function fetchRecipes() {
 
-    const response = await fetch(`${SPURL}?query=${searchQuery}&apiKey=${SPAPI_KEY}`);
-    const recipesResultObj = await response.json();
-    const recipes = recipesResultObj.results;
-    console.log("recipes",recipes);
+    let recipes = [];
+    if(useStaticData){
+      console.log("recipesData = ",recipesData);
+      recipes = recipesData.results;
+    } else {
+      const response = await fetch(`${SPURL}?query=${searchQuery}&apiKey=${SPAPI_KEY}`);
+      const recipesResultObj = await response.json();
+      recipes = recipesResultObj.results;
+
+    }
+
     if(recipes) {
       setRecipes(recipes);
     }
@@ -48,12 +59,24 @@ function App() {
 
   const handleRecipeClick = async (recipeId) => {
     try {
-        const responseObj = await fetch(`https://api.spoonacular.com/recipes/${recipeId}/information?apiKey=b52e888f858f4d0e9f89fda48da1dffb&includeNutrition=true`);
-        const recipeResultObj = await responseObj.json();
+      console.log("useStaticData = " ,useStaticData);
 
-        console.log(recipeResultObj);
-        if(recipeResultObj) {
-          setSelectedRecipe(recipeResultObj);
+      let selecteRecipeDetails = {};
+      if(useStaticData){
+        console.log("recipesData = ",selectedRecipeDetailsData);
+        selecteRecipeDetails = selectedRecipeDetailsData;
+      } else {
+        const responseObj = await fetch(`https://api.spoonacular.com/recipes/${recipeId}/information?apiKey=b52e888f858f4d0e9f89fda48da1dffb&includeNutrition=true`);
+        selecteRecipeDetails = await responseObj.json();
+      }
+
+     
+
+        console.log(typeof selecteRecipeDetails);
+        console.log(selecteRecipeDetails);
+
+        if(selecteRecipeDetails) {
+          setSelectedRecipe(selecteRecipeDetails);
           setIsLoading(false);
         }
 
@@ -65,7 +88,7 @@ function App() {
   return (
     <div className="App">
       
-      <HeaderNav/>
+      <HeaderNav value={useStaticData} onChange={(e) => setUseStaticData(!useStaticData)} />
         <SearchBox value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} />
 
         <Container>
