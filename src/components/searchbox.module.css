@@ -1,10 +1,5 @@
 .searchContainer{
-    margin: 25px auto;
-    width: 320px;
-    display:flex;
-    grid-template-columns: max-content max-content;
-    grid-gap:5px;
-    position: relative;
+
 }
 .input{
 
@@ -16,4 +11,24 @@
     font-size: 18px;
     color: #42e0f5;
 
+}
+
+.parentSearch {
+    display: flex;
+    margin: 10px;
+}
+  
+.searchboxLeft {
+    display:flex;
+}
+  
+.tipsRight {
+    display:flex;
+    padding: 10px;
+}
+  
+@media only screen and (max-width: 1000px) {
+    .parentSearch {
+        flex-direction: column;
+    }
 }
