@@ -22,7 +22,7 @@ function App() {
   const [recipes, setRecipes] = useState([]);
   const [selectedRecipe, setSelectedRecipe] = useState('');
   const [isLoading, setIsLoading] = useState(true);
-  const [useStaticData, setUseStaticData] = useState(true);
+  const [useStaticData, setUseStaticData] = useState(false);
 
 
   useEffect(() => {
