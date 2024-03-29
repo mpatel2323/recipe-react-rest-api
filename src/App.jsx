@@ -78,6 +78,7 @@ function App() {
         if(selecteRecipeDetails) {
           setSelectedRecipe(selecteRecipeDetails);
           setIsLoading(false);
+          window.scrollTo(0, 0);
         }
 
     } catch (error) {
