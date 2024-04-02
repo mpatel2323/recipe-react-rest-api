@@ -8,6 +8,7 @@ import Container from './components/Container';
 import InnerContainer from './components/innerContainer'; 
 import HeaderNav from './components/HeaderNav';
 
+
 import './App.css';
 
 import recipesData from './data/recipes.json';// Import static JSON data for recipe details in case spoonacular api limit reach for the day
@@ -41,7 +42,7 @@ function App() {
       console.log("recipesData = ",recipesData);
       recipes = recipesData.results;
     } else {
-      const response = await fetch(`${SPURL}?query=${searchQuery}&apiKey=${SPAPI_KEY}`);
+      const response = await fetch(`${SPURL}?query=${searchQuery}&apiKey=${import.meta.env.VITE_SPAPI_KEY}`);
       const recipesResultObj = await response.json();
       recipes = recipesResultObj.results;
 
@@ -66,7 +67,7 @@ function App() {
         console.log("recipesData = ",selectedRecipeDetailsData);
         selecteRecipeDetails = selectedRecipeDetailsData;
       } else {
-        const responseObj = await fetch(`https://api.spoonacular.com/recipes/${recipeId}/information?apiKey=b52e888f858f4d0e9f89fda48da1dffb&includeNutrition=true`);
+        const responseObj = await fetch(`https://api.spoonacular.com/recipes/${recipeId}/information?apiKey=${import.meta.env.VITE_SPAPI_KEY}&includeNutrition=true`);
         selecteRecipeDetails = await responseObj.json();
       }
 
@@ -88,7 +89,7 @@ function App() {
 
   return (
     <div className="App">
-      
+
       <HeaderNav value={useStaticData} onChange={(e) => setUseStaticData(!useStaticData)} />
         <SearchBox value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} />
 
