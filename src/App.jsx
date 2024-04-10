@@ -7,6 +7,7 @@ import RecipeDetail from './components/RecipeDetail';
 import Container from './components/Container';
 import InnerContainer from './components/innerContainer'; 
 import HeaderNav from './components/HeaderNav';
+import { useDebounce } from 'use-debounce';
 
 
 import './App.css';
@@ -19,11 +20,19 @@ const RD_URL = "https://api.spoonacular.com/recipes/716429/information?includeNu
 const SPAPI_KEY = 'b52e888f858f4d0e9f89fda48da1dffb';
 
 function App() {
-  const [searchQuery, setSearchQuery] = useState('');
+  const [searchQuery, setSearchQuery] = useState(''); // for search input
+  const [debouncedSearchValue] = useDebounce(searchQuery, 500); // debounce hook for search text input
+
   const [recipes, setRecipes] = useState([]);
   const [selectedRecipe, setSelectedRecipe] = useState('');
   const [isLoading, setIsLoading] = useState(true);
   const [useStaticData, setUseStaticData] = useState(false);
+
+  const handleSearchInputChange = (event) => {
+    const searchTextvalue = event.target.value;
+    setSearchQuery(searchTextvalue);
+
+ }
 
 
   useEffect(() => {
@@ -33,7 +42,7 @@ function App() {
       setSelectedRecipe();
       setRecipes([]);
     }
-  }, [searchQuery]);
+  }, [debouncedSearchValue]);
 
   async function fetchRecipes() {
 
@@ -91,7 +100,7 @@ function App() {
     <div className="App">
 
       <HeaderNav value={useStaticData} onChange={(e) => setUseStaticData(!useStaticData)} />
-        <SearchBox value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} />
+        <SearchBox value={searchQuery} onChange={handleSearchInputChange} />
 
         <Container>
             <InnerContainer>
